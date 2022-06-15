@@ -27,6 +27,7 @@ const menu = document.querySelector(".menu");
 const navbar = document.querySelector(".navbar--mobile");
 const menuOpenButton = document.querySelector(".menu__button");
 const menuCloseButton = document.querySelector(".menu__close-btn");
+
 menuOpenButton.addEventListener("click", () => {
   menu.style.display = "block";
   navbar.style.display = "block";
