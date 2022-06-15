@@ -21,7 +21,7 @@
             <li class="navbar__list-item"><a href="index.html#contacts" class="navbar__list-link">Контакты</a></li>
           </ul>
         </nav>
-        <button class="button">Заказать звонок</button>
+        <button class="button modal__btn">Заказать звонок</button>
         <button class="menu__button">
           <span class="menu__line"></span>
           <span class="menu__line"></span>
@@ -37,7 +37,7 @@
               <li class="navbar__list-item--mobile"><a href="index.html#teachers" class="navbar__list-link">Преподаватели</a></li>
               <li class="navbar__list-item--mobile"><a href="index.html#contacts" class="navbar__list-link">Рассылка</a></li>
               <li class="navbar__list-item--mobile"><a href="index.html#contacts" class="navbar__list-link">Контакты</a></li>
-              <li class="navbar__list-item--mobile"><button class="button button--mobile">Заказать звонок</button></li>
+              <li class="navbar__list-item--mobile"><button class="button button--mobile modal__btn">Заказать звонок</button></li>
             </ul>
           </nav>
         </div>
@@ -70,7 +70,7 @@
       <div class="header__bottom-wrapper">
         <div class="container">
             <div class="header__bottom">
-                <button class="button button-pink">Заказать курс</button>
+                <button class="button button-pink modal__btn">Заказать курс</button>
                 <ul class="header__list">
                     <li class="header__list-item">
                         <span class="header__list-item-text">Учеников всего:</span>
@@ -280,8 +280,8 @@
       <h2 class="title">Статьи каждую неделю</h2>
       <p class="footer__description">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
       <form class="footer__form">
-        <input type="text" class="footer__input" placeholder="Email">
-        <button class="button button-pink">Подписаться</button>
+        <input type="email" class="footer__input" placeholder="Email">
+        <button class="button button-pink email__btn">Подписаться</button>
       </form>
       <div class="social-media__block">
         <a href="https://vk.com/" class="social-media__link">
@@ -300,6 +300,27 @@
     </div>
   </div>
     </footer>
+    <div class="modal">
+      <div class="container">
+        <div class="modal__window">
+          <form class="modal__form">
+            <button class="modal__close-btn"><img class="menu__close-img" src="images/close.svg" alt="close" /></button>
+            <span class="title">Введите необходимую информацию</span>
+            <input type="text" class="modal__input" placeholder="Имя">
+            <input type="tel" class="modal__input" placeholder="Номер телефона">
+            <button class="button-pink">Заказать звонок</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="success">
+      <div class="container">
+        <div class="modal__window">
+          <button class="success__close-btn"><img class="menu__close-img" src="images/close.svg" alt="close" /></button>
+          <span class="title">Вы подписались на рассылку!</span>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="main.js"></script>
   </body>

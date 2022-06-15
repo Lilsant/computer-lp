@@ -23,6 +23,8 @@ function setTimer() {
 
 setTimer();
 
+// Mobile Menu
+
 const menu = document.querySelector(".menu");
 const navbar = document.querySelector(".navbar--mobile");
 const menuOpenButton = document.querySelector(".menu__button");
@@ -30,6 +32,7 @@ const menuCloseButton = document.querySelector(".menu__close-btn");
 
 menuOpenButton.addEventListener("click", () => {
   menu.style.display = "block";
+  document.body.style.overflow = "hidden";
   navbar.style.display = "block";
   menuOpenButton.style.display = "none";
 });
@@ -37,5 +40,47 @@ menuOpenButton.addEventListener("click", () => {
 menuCloseButton.addEventListener("click", () => {
   menu.style.display = "none";
   navbar.style.display = "none";
+  document.body.style.overflow = "";
   menuOpenButton.style.display = "flex";
+});
+
+// End Mobile Menu
+
+// Call Modal Window
+
+const modal = document.querySelector(".modal");
+const modalOpenButton = document.querySelectorAll(".modal__btn");
+const modalCloseButton = document.querySelector(".modal__close-btn");
+
+modalOpenButton.forEach((el) => {
+  el.addEventListener("click", (e) => {
+    e.preventDefault();
+    document.body.style.overflow = "hidden";
+    modal.style.display = "flex";
+  });
+});
+
+modalCloseButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  modal.style.display = "none";
+  document.body.style.overflow = "";
+});
+
+// End Call Modal Window
+
+// Email Modal Window
+
+const emailModal = document.querySelector(".success");
+const emailModalOpenButton = document.querySelector(".email__btn");
+const emailModalCloseButton = document.querySelector(".success__close-btn");
+
+emailModalOpenButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  document.body.style.overflow = "hidden";
+  emailModal.style.display = "flex";
+});
+
+emailModalCloseButton.addEventListener("click", (e) => {
+  document.body.style.overflow = "";
+  emailModal.style.display = "none";
 });
