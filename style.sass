@@ -1,0 +1,534 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Roboto', sans-serif
+    color: #FFF
+
+a
+    text-decoration: none
+
+
+.header 
+    background-image: url("./images/header-bg.png")
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    &__top
+        padding: 40px 80px 0 80px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__main
+        &-wrapper
+            padding-top: 188px
+            padding-bottom: 218px
+    &__title
+        font-weight: 700
+        font-size: 64px
+        line-height: 140%
+        margin-bottom: 50px
+    &__bottom
+        display: flex
+        align-items: center
+        &-wrapper
+            padding-top: 36px
+            padding-bottom: 36px
+            background-color: #121212
+    &__list
+        list-style: none
+        display: flex
+        flex-wrap: wrap
+        margin-left: 81px
+        &-item
+            width: 135px
+            display: flex
+            justify-content: space-between
+            flex-basis: 40%
+            margin-right: 81px
+            &-text
+                font-weight: 400
+                font-size: 16px
+                line-height: 150%
+                opacity: 0.4
+            &-main
+                font-weight: 700
+
+.menu
+    display: none
+    &__button
+        background-color: transparent
+        border: 1px solid white
+        padding: 10px 10px
+        cursor: pointer
+        flex-direction: column
+        display: none
+    &__line
+        width: 20px
+        height: 2px
+        background-color: white
+        margin-bottom: 5px
+        &:last-child
+            margin-bottom: 0
+    &__close
+        &-btn
+            background-color: transparent
+            border: none
+            cursor: pointer
+            float: right
+        &-img
+            width: 20px
+            height: 20px
+
+.timer
+    display: flex
+    &__box
+        padding: 20px 30px
+        background-color: #121212
+        z-index: 100
+        opacity: 0
+        margin-right: 30px
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__main
+        font-weight: 700
+        font-size: 36px
+        line-height: 140%
+    &__units
+        font-weight: 400
+        font-size: 16px
+        line-height: 140%
+        opacity: 0.4
+
+.navbar
+    &__list
+        display: flex
+        list-style: none
+        &--mobile
+            display: block
+            position: fixed
+            width: 40%
+            height: 100vh
+            padding: 30px 20px
+            top: 0
+            right: 0
+            background-color: #121212
+        &-item
+            margin-right: 56px
+            font-weight: 400
+            font-size: 16px
+            line-height: 150%
+            &--mobile
+                margin-bottom: 20px
+
+.logo
+    width: 40px
+    height: 40px
+
+.button
+    padding: 10px 30px
+    border: none
+    color: #fff
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%)
+    border-radius: 50px
+    cursor: pointer
+    font-size: 16px
+    line-height: 150%   
+    &-pink
+        background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%)
+
+.container
+    width: 1300px
+    margin: 0 auto
+
+.about
+    padding: 200px 0
+    &__inner
+        display: flex
+        justify-content: space-between
+    &__info
+        padding-top: 50px
+        width: 636px
+    &__description
+        margin-top: 45px
+        font-size: 16px
+        line-height: 160%
+
+.title
+    font-weight: 700
+    font-size: 48px
+    line-height: 140%
+    &__wrapper
+        display: flex
+        align-items: center
+    &__image
+        margin-right: 20px
+
+.wrapper
+    background-image: url("./images/bgc.png")
+    background-size: cover
+
+
+
+.start
+    padding-bottom: 200px
+    &__description
+        line-height: 160%
+        opacity: 0.4
+        margin-top: 20px
+        margin-bottom: 80px
+        width: 411px
+    &__infographic
+        display: flex
+        &-value
+            font-weight: 700
+            font-size: 36px
+            line-height: 140%
+        &-visual
+            height: 80px
+            display: flex
+            align-items: center
+            margin-bottom: 35px
+        &-line
+            width: 100%
+            height: 100%
+            background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%)
+        &-description
+            font-size: 14px
+            line-height: 160%
+            opacity: 0.5
+
+#line_50
+    height: 50%
+#line_75
+    height: 75%
+#line_itog
+    height: 10px
+
+
+.advantages
+    padding-bottom: 200px
+    .title
+        text-align: center
+        margin-bottom: 120px
+    &__list
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__box
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 358px
+        text-align: center
+    &__img
+        margin-bottom: 60px
+    &__title
+        font-weight: 700
+        font-size: 24px
+        line-height: 140%
+        text-align: center
+        margin-bottom: 30px
+    &__description
+        line-height: 160%
+        opacity: 0.8
+
+.partner
+    padding-bottom: 150px
+    .title__wrapper .title__image
+        transform: rotate(180deg)
+    &__table
+        border-collapse: collapse
+        margin-top: 60px
+        &-dote
+            padding: 30px 66px
+            border-left: 1px solid #4c4c4c
+            &:first-child
+                border-left: none
+        &-row
+            border-bottom: 1px solid #4c4c4c
+            
+            &:last-child
+                border-bottom: none
+
+.program
+    padding-bottom: 170px
+    text-align: center
+    .title__wrapper
+        display: flex
+        flex-direction: column
+        margin-bottom: 30px
+        .title__image
+            margin-bottom: 31px
+            transform: rotate(135deg)
+    &__description
+        line-height: 160%
+        opacity: 0.5
+        width: 411px
+        margin: 0 auto
+        margin-bottom: 80px
+    &__graphic
+        display: flex
+        width: fit-content
+        margin: 0 auto
+        &-box
+            width: 290px
+            &:first-child
+                border-right: 6px solid #7C6AFA
+                padding-right: 60px
+                text-align: right
+            &:last-child
+                margin-top: 87px
+                padding-left: 60px
+                text-align-last: left
+                .program__graphic-description
+                    &::after
+                        left: -60px
+        &-title
+            display: block
+            line-height: 160%
+            opacity: 0.5
+            font-size: 14px
+            text-align: right
+        &-description
+            margin-top: 15px
+            position: relative
+            line-height: 160%
+            font-size: 18px
+            &::after
+                content: ""
+                width: 40px
+                height: 1px
+                background-color: #4c4c4c
+                position: absolute
+                top: 0
+                right: -60px
+        &-info
+            margin-bottom: 87px
+            &:last-child
+                margin-bottom: 20px
+
+.teachers
+    padding-bottom: 200px
+    &__info
+        margin-top: 60px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__box
+        display: flex
+        flex-direction: column
+        text-align: center
+    &__image
+        margin-bottom: 40px
+    &__name
+        font-size: 24px
+        line-height: 140%
+        margin-bottom: 15px
+    &__description
+        font-size: 16px
+        line-height: 160%
+        opacity: 0.8
+        margin-bottom: 30px
+    &__button
+        width: fit-content
+        margin: 0 auto
+        padding: 10px 50px
+        background-color: transparent
+        border: 1px solid #fff
+        border-radius: 50px
+        cursor: pointer
+
+.footer
+    text-align: center
+    padding-bottom: 50px
+    &__form
+        width: fit-content
+        margin: 0 auto
+        position: relative
+        margin-bottom: 40px
+    &__input
+        padding: 10px 30px
+        width: 353px
+        height: 44px
+        outline: none
+        background-color: #46464627
+        border-radius: 50px 0px 0px 50px
+        border: none
+    .button
+        position: absolute
+        right: -30px
+    &__description
+        line-height: 160%
+        opacity: 0.5
+        width: 411px
+        margin: 0 auto
+        margin-top: 30px
+        margin-bottom: 60px
+
+.social-media
+    &__block
+        display: flex
+        width: fit-content
+        margin: 0 auto
+    &__link
+        width: 50px
+        height: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 13px
+        border-radius: 50px
+        background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%)
+        margin-right: 30px
+        cursor: pointer
+        &:last-child
+            margin-right: 0
+
+@media screen and (max-width: 1336px) 
+    .container
+        width: 90%
+    .about
+        &__info
+            width: 40%
+    .start
+        &__infographic-box
+            width: 25%
+        &__infographic-description
+            width: 90%
+            text-align: center
+    .partner__image
+        width: 150px
+
+@media screen and (max-width: 1200px)
+    .navbar
+        &__list-item
+            margin-right: 30px
+    .header
+        &__main-wrapper
+            padding-top: 140px
+            padding-bottom: 150px
+    .advantages
+        &__box
+            width: 28%
+    .partner__image
+        width: 100px
+
+@media screen and (max-width: 1000px)
+    .about
+        &__image
+            width: 50%
+            height: fit-content
+        &__info
+            padding-top: 0
+        &__description
+            margin-top: 10px
+    .title
+        font-size: 26px
+    .partner__image
+        width: 70px
+    .header
+        &__top
+            padding-left: 10px
+            padding-right: 10px
+        &__list-item
+            width: 100px
+            margin-right: 30px
+            flex-basis: 100%
+
+@media screen and (max-width: 820px)
+    .button
+        display: none
+        &--mobile
+            display: inline-block
+            margin-top: 40px
+        &-pink
+            display: inline-block
+    .navbar
+        display: none
+    .header__title
+        font-size: 48px
+    .menu__button
+        display: flex
+    .partner
+        &__table-row
+            display: flex
+            flex-wrap: wrap
+            border: none
+        &__table-dote
+            border: none
+        &__image
+            width: 170px
+    
+@media screen and (max-width:700px)
+    .header
+        &__bottom
+            flex-direction: column
+        .button
+            margin-bottom: 20px
+    .about
+        padding-top: 60px
+        padding-bottom: 60px
+        &__inner
+            flex-direction: column
+        &__image
+            width: 80%
+            margin: 0 auto
+            margin-bottom: 20px
+        &__info
+            width: 100%
+    .start__infographic
+        flex-direction: column-reverse
+        &-box
+            width: 100%
+    .advantages
+        padding-bottom: 100px
+        &__list
+            flex-direction: column
+        &__box
+            width: 100%
+            margin-bottom: 60px
+        &__img
+            margin-bottom: 20px
+        .title
+            margin-bottom: 60px
+    .partner
+        padding-bottom: 100px
+        &__image
+            width: 150px
+    .teachers
+        padding-bottom: 100px
+        &__info
+            flex-direction: column
+        &__box
+            margin-bottom: 50px
+    .timer
+        &__box
+            padding-right: 10px
+            padding-left: 10px
+    .header__list-item
+        width: 100%
+        margin-right: 0
+        flex-basis: 100%
+    .header__list
+        margin-left: 0
+    .start__description
+        width: 100%
+    .program__graphic-box
+        width: 50%
+    .program__description
+        width: 100%
+    .footer__description
+        width: 100%
+    .footer__input
+        width: 300px
+    .partner__table-row:last-child
+        display: none
+    .partner__table-dote
+        width: 100%
+    .partner__image
+        width: 100%
+    .header__title
+        font-size: 36px
+    
